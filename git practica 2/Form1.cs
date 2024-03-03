@@ -16,9 +16,37 @@ namespace git_practica_2
             InitializeComponent();
         }
 
+        //=================
+        // metodos.
+        Form frm_contenedor;
+        private void fnAbrirForms(Form frm)
+        {
+            if (frm_contenedor != null)
+            {
+                frm_contenedor = null;
+            }
+            if (pnl_contenedor.Controls.Count > 0)
+            {
+                pnl_contenedor.Controls.RemoveAt(0);
+            }
+            frm_contenedor = frm;
+
+            frm.TopLevel = false;
+            frm.Dock = DockStyle.Fill;
+            pnl_contenedor.Controls.Add(frm);
+            frm.BringToFront();
+            frm.Show();
+        }
+        //=================
         private void frm_venta_hogar_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void btn_agregar_Click(object sender, EventArgs e)
+        {
+            //frm_agregar frmagr = new frm_agregar();
+            fnAbrirForms(new frm_agregar());
         }
 
     }
