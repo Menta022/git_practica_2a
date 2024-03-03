@@ -5,3 +5,5 @@ C:\Programacion2\seminario de programacion\git practica 2\git practica 2\obj\x86
 C:\Programacion2\seminario de programacion\git practica 2\git practica 2\obj\x86\Debug\git practica 2.csproj.GenerateResource.Cache
 C:\Programacion2\seminario de programacion\git practica 2\git practica 2\obj\x86\Debug\git practica 2.exe
 C:\Programacion2\seminario de programacion\git practica 2\git practica 2\obj\x86\Debug\git practica 2.pdb
+C:\Programacion2\git practica 2a\git_practica_2a\git practica 2\obj\x86\Debug\git practica 2.exe
+C:\Programacion2\git practica 2a\git_practica_2a\git practica 2\obj\x86\Debug\git practica 2.pdb
