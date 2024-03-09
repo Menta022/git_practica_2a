@@ -44,7 +44,7 @@
             this.btn_cerrar.BackColor = System.Drawing.Color.Red;
             this.btn_cerrar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_cerrar.ForeColor = System.Drawing.Color.White;
-            this.btn_cerrar.Location = new System.Drawing.Point(757, 419);
+            this.btn_cerrar.Location = new System.Drawing.Point(771, 218);
             this.btn_cerrar.Name = "btn_cerrar";
             this.btn_cerrar.Size = new System.Drawing.Size(127, 57);
             this.btn_cerrar.TabIndex = 17;
