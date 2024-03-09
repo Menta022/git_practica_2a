@@ -23,7 +23,7 @@ namespace git_practica_2
 
         private void FrmModificar_Load(object sender, EventArgs e)
         {
-            int numero = 0;
+            int numero = 10;
         }
     }
 }
