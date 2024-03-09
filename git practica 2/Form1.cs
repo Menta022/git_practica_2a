@@ -49,5 +49,10 @@ namespace git_practica_2
             fnAbrirForms(new frm_agregar());
         }
 
+        private void btn_modificar_Click(object sender, EventArgs e)
+        {
+            fnAbrirForms(new FrmModificar());
+        }
+
     }
 }
