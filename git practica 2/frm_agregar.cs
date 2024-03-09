@@ -60,5 +60,10 @@ namespace git_practica_2
         {
             this.Close();
         }
+
+        private void frm_agregar_Load(object sender, EventArgs e)
+        {
+            int numeros = 20;
+        }
     }
 }
