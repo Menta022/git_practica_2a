@@ -104,7 +104,7 @@
             this.btn_cerrar.Name = "btn_cerrar";
             this.btn_cerrar.Size = new System.Drawing.Size(127, 57);
             this.btn_cerrar.TabIndex = 10;
-            this.btn_cerrar.Text = "Cerrar";
+            this.btn_cerrar.Text = "Volver";
             this.btn_cerrar.UseVisualStyleBackColor = false;
             this.btn_cerrar.Click += new System.EventHandler(this.btn_cerrar_Click);
             // 
@@ -123,6 +123,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frm_agregar";
             this.Text = "frm_agregar";
+            this.Load += new System.EventHandler(this.frm_agregar_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
