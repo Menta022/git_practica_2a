@@ -20,5 +20,10 @@ namespace git_practica_2
         {
             this.Close();
         }
+
+        private void FrmModificar_Load(object sender, EventArgs e)
+        {
+            int numero = 0;
+        }
     }
 }
