@@ -31,7 +31,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.txt_nombre = new System.Windows.Forms.TextBox();
+            this.txt_nombres = new System.Windows.Forms.TextBox();
             this.txt_apellido = new System.Windows.Forms.TextBox();
             this.txt_dni = new System.Windows.Forms.TextBox();
             this.btn_cerrar = new System.Windows.Forms.Button();
@@ -41,11 +41,11 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(34, 42);
+            this.label1.Location = new System.Drawing.Point(22, 42);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(100, 25);
+            this.label1.Size = new System.Drawing.Size(112, 25);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Nombre:";
+            this.label1.Text = "Nombres:";
             // 
             // label2
             // 
@@ -67,14 +67,14 @@
             this.label3.TabIndex = 4;
             this.label3.Text = "DNI:";
             // 
-            // txt_nombre
+            // txt_nombres
             // 
-            this.txt_nombre.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_nombre.Location = new System.Drawing.Point(140, 36);
-            this.txt_nombre.Name = "txt_nombre";
-            this.txt_nombre.Size = new System.Drawing.Size(235, 31);
-            this.txt_nombre.TabIndex = 5;
-            this.txt_nombre.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_nombre_KeyPress);
+            this.txt_nombres.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_nombres.Location = new System.Drawing.Point(140, 36);
+            this.txt_nombres.Name = "txt_nombres";
+            this.txt_nombres.Size = new System.Drawing.Size(235, 31);
+            this.txt_nombres.TabIndex = 5;
+            this.txt_nombres.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_nombre_KeyPress);
             // 
             // txt_apellido
             // 
@@ -116,7 +116,7 @@
             this.Controls.Add(this.btn_cerrar);
             this.Controls.Add(this.txt_dni);
             this.Controls.Add(this.txt_apellido);
-            this.Controls.Add(this.txt_nombre);
+            this.Controls.Add(this.txt_nombres);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -134,7 +134,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox txt_nombre;
+        private System.Windows.Forms.TextBox txt_nombres;
         private System.Windows.Forms.TextBox txt_apellido;
         private System.Windows.Forms.TextBox txt_dni;
         private System.Windows.Forms.Button btn_cerrar;
