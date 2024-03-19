@@ -1,0 +1,4 @@
+C:\Programacion2\seminario de programacion\git practica 2\Datos\bin\Debug\Datos.dll
+C:\Programacion2\seminario de programacion\git practica 2\Datos\bin\Debug\Datos.pdb
+C:\Programacion2\seminario de programacion\git practica 2\Datos\obj\Debug\Datos.dll
+C:\Programacion2\seminario de programacion\git practica 2\Datos\obj\Debug\Datos.pdb

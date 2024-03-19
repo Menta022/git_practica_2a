@@ -31,68 +31,61 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.txt_nombres = new System.Windows.Forms.TextBox();
-            this.txt_apellido = new System.Windows.Forms.TextBox();
-            this.txt_dni = new System.Windows.Forms.TextBox();
+            this.txt_color = new System.Windows.Forms.TextBox();
+            this.txt_direccion = new System.Windows.Forms.TextBox();
             this.btn_cerrar = new System.Windows.Forms.Button();
+            this.txt_numero = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.cmb_localidad = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(22, 42);
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(66, 39);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(112, 25);
+            this.label1.Size = new System.Drawing.Size(56, 20);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Nombres:";
+            this.label1.Text = "Color:";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(30, 104);
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(35, 88);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(104, 25);
+            this.label2.Size = new System.Drawing.Size(89, 20);
             this.label2.TabIndex = 2;
-            this.label2.Text = "Apellido:";
+            this.label2.Text = "Direccion:";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(77, 160);
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(33, 138);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(57, 25);
+            this.label3.Size = new System.Drawing.Size(91, 20);
             this.label3.TabIndex = 4;
-            this.label3.Text = "DNI:";
+            this.label3.Text = "Localidad:";
             // 
-            // txt_nombres
+            // txt_color
             // 
-            this.txt_nombres.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_nombres.Location = new System.Drawing.Point(140, 36);
-            this.txt_nombres.Name = "txt_nombres";
-            this.txt_nombres.Size = new System.Drawing.Size(235, 31);
-            this.txt_nombres.TabIndex = 5;
-            this.txt_nombres.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_nombre_KeyPress);
+            this.txt_color.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_color.Location = new System.Drawing.Point(128, 36);
+            this.txt_color.Name = "txt_color";
+            this.txt_color.Size = new System.Drawing.Size(121, 26);
+            this.txt_color.TabIndex = 5;
+            this.txt_color.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_nombre_KeyPress);
             // 
-            // txt_apellido
+            // txt_direccion
             // 
-            this.txt_apellido.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_apellido.Location = new System.Drawing.Point(140, 98);
-            this.txt_apellido.Name = "txt_apellido";
-            this.txt_apellido.Size = new System.Drawing.Size(235, 31);
-            this.txt_apellido.TabIndex = 7;
-            this.txt_apellido.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_apellido_KeyPress);
-            // 
-            // txt_dni
-            // 
-            this.txt_dni.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_dni.Location = new System.Drawing.Point(140, 154);
-            this.txt_dni.Name = "txt_dni";
-            this.txt_dni.Size = new System.Drawing.Size(235, 31);
-            this.txt_dni.TabIndex = 9;
-            this.txt_dni.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_dni_KeyPress);
+            this.txt_direccion.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_direccion.Location = new System.Drawing.Point(128, 85);
+            this.txt_direccion.Name = "txt_direccion";
+            this.txt_direccion.Size = new System.Drawing.Size(235, 26);
+            this.txt_direccion.TabIndex = 7;
+            this.txt_direccion.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_apellido_KeyPress);
             // 
             // btn_cerrar
             // 
@@ -108,15 +101,44 @@
             this.btn_cerrar.UseVisualStyleBackColor = false;
             this.btn_cerrar.Click += new System.EventHandler(this.btn_cerrar_Click);
             // 
+            // txt_numero
+            // 
+            this.txt_numero.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_numero.Location = new System.Drawing.Point(451, 85);
+            this.txt_numero.Name = "txt_numero";
+            this.txt_numero.Size = new System.Drawing.Size(92, 26);
+            this.txt_numero.TabIndex = 11;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(369, 88);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(76, 20);
+            this.label4.TabIndex = 12;
+            this.label4.Text = "Numero:";
+            // 
+            // cmb_localidad
+            // 
+            this.cmb_localidad.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmb_localidad.FormattingEnabled = true;
+            this.cmb_localidad.Location = new System.Drawing.Point(128, 137);
+            this.cmb_localidad.Name = "cmb_localidad";
+            this.cmb_localidad.Size = new System.Drawing.Size(121, 21);
+            this.cmb_localidad.TabIndex = 13;
+            // 
             // frm_agregar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(910, 500);
+            this.Controls.Add(this.cmb_localidad);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.txt_numero);
             this.Controls.Add(this.btn_cerrar);
-            this.Controls.Add(this.txt_dni);
-            this.Controls.Add(this.txt_apellido);
-            this.Controls.Add(this.txt_nombres);
+            this.Controls.Add(this.txt_direccion);
+            this.Controls.Add(this.txt_color);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -134,9 +156,11 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox txt_nombres;
-        private System.Windows.Forms.TextBox txt_apellido;
-        private System.Windows.Forms.TextBox txt_dni;
+        private System.Windows.Forms.TextBox txt_color;
+        private System.Windows.Forms.TextBox txt_direccion;
         private System.Windows.Forms.Button btn_cerrar;
+        private System.Windows.Forms.TextBox txt_numero;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.ComboBox cmb_localidad;
     }
 }
