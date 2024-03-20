@@ -15,6 +15,9 @@ namespace git_practica_2
         {
             InitializeComponent();
             agregar = new Negocios.AgregarCasa();
+            txt_color.MaxLength = 20;
+            txt_direccion.MaxLength = 20;
+            txt_numero.MaxLength = 5;
         }
 
         Negocios.AgregarCasa agregar;
@@ -44,6 +47,7 @@ namespace git_practica_2
             }
         }
 
+        /*cargo el combobox con las localidades y sus PK de la base de datos.*/
         private void fnLocalidadCmb(ComboBox cmb)
         {
             DataTable dt = agregar.FnCargarCmb("select nombre, id_localidad from localidad");
@@ -54,24 +58,45 @@ namespace git_practica_2
             dt.Rows.InsertAt(fila, 0);
             cmb.DataSource = dt;
             cmb.DisplayMember = "nombre";
-            cmb.ValueMember = "id_localidad";
+            cmb.ValueMember = "id_localidad"; // PK.
         }
+
+        private bool fnComprobarTextBox(Form frm)
+        {
+            bool seguir = true;
+
+            foreach (var item in frm.Controls)
+            {
+                if (item is TextBox)
+                {
+                    if (((TextBox)item).Text == "")
+                    {
+                        seguir = false;
+                        break;
+                    }
+                }
+            }
+
+            return seguir;
+        }
+
+
         //==================
 
-        private void txt_nombre_KeyPress(object sender, KeyPressEventArgs e)
-        {
-            fnKeyPressLetras(e);
-        }
+        //private void txt_nombre_KeyPress(object sender, KeyPressEventArgs e)
+        //{
+        //    fnKeyPressLetras(e);
+        //}
 
-        private void txt_apellido_KeyPress(object sender, KeyPressEventArgs e)
-        {
-            fnKeyPressLetras(e);
-        }
+        //private void txt_apellido_KeyPress(object sender, KeyPressEventArgs e)
+        //{
+        //    fnKeyPressLetras(e);
+        //}
 
-        private void txt_dni_KeyPress(object sender, KeyPressEventArgs e)
-        {
-            fnKeyPressNumeros(e);
-        }
+        //private void txt_dni_KeyPress(object sender, KeyPressEventArgs e)
+        //{
+        //    fnKeyPressNumeros(e);
+        //}
 
         private void btn_cerrar_Click(object sender, EventArgs e)
         {
@@ -81,6 +106,47 @@ namespace git_practica_2
         private void frm_agregar_Load(object sender, EventArgs e)
         {
             fnLocalidadCmb(cmb_localidad);
+        }
+
+        private void btn_agregar_Click(object sender, EventArgs e)
+        {
+            if (fnComprobarTextBox(this) && cmb_localidad.SelectedIndex > 0)
+            {
+                int num = Convert.ToInt32(cmb_localidad.SelectedValue);
+                agregar.VarColor = txt_color.Text;
+                agregar.VarDireccion = txt_direccion.Text;
+                agregar.VarEstado = "en venta";
+                agregar.VarNum_dir = Convert.ToInt32(txt_numero.Text);
+                agregar.VarId_localidad = num;
+
+                if (agregar.FnAgregarCasa("SP_CASAS", agregar.para(1)))
+                {
+                    MessageBox.Show("funciono.");
+                }
+                else
+                {
+                    MessageBox.Show("Error al ingresar datos");
+                }
+            }
+            else
+            {
+                MessageBox.Show("esta vacio.");
+            }
+        }
+
+        private void txt_color_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            fnKeyPressLetras(e);
+        }
+
+        private void txt_direccion_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            fnKeyPressLetras(e);
+        }
+
+        private void txt_numero_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            fnKeyPressNumeros(e);
         }
     }
 }
