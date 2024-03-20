@@ -34,6 +34,8 @@
             this.btn_agregar = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.pnl_contenedor = new System.Windows.Forms.Panel();
+            this.btn_vender = new System.Windows.Forms.Button();
+            this.btn_datos = new System.Windows.Forms.Button();
             this.pnl_menu_lateral.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -49,6 +51,8 @@
             // pnl_menu_lateral
             // 
             this.pnl_menu_lateral.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.pnl_menu_lateral.Controls.Add(this.btn_datos);
+            this.pnl_menu_lateral.Controls.Add(this.btn_vender);
             this.pnl_menu_lateral.Controls.Add(this.btn_modificar);
             this.pnl_menu_lateral.Controls.Add(this.btn_agregar);
             this.pnl_menu_lateral.Controls.Add(this.panel1);
@@ -65,7 +69,7 @@
             this.btn_modificar.Name = "btn_modificar";
             this.btn_modificar.Size = new System.Drawing.Size(155, 49);
             this.btn_modificar.TabIndex = 1;
-            this.btn_modificar.Text = "Modificar";
+            this.btn_modificar.Text = "Modificar Casa";
             this.btn_modificar.UseVisualStyleBackColor = true;
             this.btn_modificar.Click += new System.EventHandler(this.btn_modificar_Click);
             // 
@@ -76,7 +80,7 @@
             this.btn_agregar.Name = "btn_agregar";
             this.btn_agregar.Size = new System.Drawing.Size(155, 49);
             this.btn_agregar.TabIndex = 0;
-            this.btn_agregar.Text = "Agregar";
+            this.btn_agregar.Text = "Agregar Casa";
             this.btn_agregar.UseVisualStyleBackColor = true;
             this.btn_agregar.Click += new System.EventHandler(this.btn_agregar_Click);
             // 
@@ -97,6 +101,26 @@
             this.pnl_contenedor.Name = "pnl_contenedor";
             this.pnl_contenedor.Size = new System.Drawing.Size(910, 500);
             this.pnl_contenedor.TabIndex = 2;
+            // 
+            // btn_vender
+            // 
+            this.btn_vender.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btn_vender.Location = new System.Drawing.Point(0, 159);
+            this.btn_vender.Name = "btn_vender";
+            this.btn_vender.Size = new System.Drawing.Size(155, 49);
+            this.btn_vender.TabIndex = 2;
+            this.btn_vender.Text = "Vender";
+            this.btn_vender.UseVisualStyleBackColor = true;
+            // 
+            // btn_datos
+            // 
+            this.btn_datos.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btn_datos.Location = new System.Drawing.Point(0, 208);
+            this.btn_datos.Name = "btn_datos";
+            this.btn_datos.Size = new System.Drawing.Size(155, 49);
+            this.btn_datos.TabIndex = 3;
+            this.btn_datos.Text = "Datos";
+            this.btn_datos.UseVisualStyleBackColor = true;
             // 
             // frm_venta_hogar
             // 
@@ -122,6 +146,8 @@
         private System.Windows.Forms.Button btn_modificar;
         private System.Windows.Forms.Button btn_agregar;
         private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Button btn_vender;
+        private System.Windows.Forms.Button btn_datos;
     }
 }
 
