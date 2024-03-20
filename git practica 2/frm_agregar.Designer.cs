@@ -39,6 +39,8 @@
             this.cmb_localidad = new System.Windows.Forms.ComboBox();
             this.btn_agregar = new System.Windows.Forms.Button();
             this.label5 = new System.Windows.Forms.Label();
+            this.dtg_mostrar_casas = new System.Windows.Forms.DataGridView();
+            ((System.ComponentModel.ISupportInitialize)(this.dtg_mostrar_casas)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -155,11 +157,25 @@
             this.label5.TabIndex = 15;
             this.label5.Text = "Agregar Casa";
             // 
+            // dtg_mostrar_casas
+            // 
+            this.dtg_mostrar_casas.AllowUserToAddRows = false;
+            this.dtg_mostrar_casas.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
+            this.dtg_mostrar_casas.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
+            this.dtg_mostrar_casas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dtg_mostrar_casas.Location = new System.Drawing.Point(91, 229);
+            this.dtg_mostrar_casas.Name = "dtg_mostrar_casas";
+            this.dtg_mostrar_casas.ReadOnly = true;
+            this.dtg_mostrar_casas.RowHeadersVisible = false;
+            this.dtg_mostrar_casas.Size = new System.Drawing.Size(426, 202);
+            this.dtg_mostrar_casas.TabIndex = 16;
+            // 
             // frm_agregar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(910, 500);
+            this.Controls.Add(this.dtg_mostrar_casas);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.btn_agregar);
             this.Controls.Add(this.cmb_localidad);
@@ -175,6 +191,7 @@
             this.Name = "frm_agregar";
             this.Text = "frm_agregar";
             this.Load += new System.EventHandler(this.frm_agregar_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.dtg_mostrar_casas)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -193,5 +210,6 @@
         private System.Windows.Forms.ComboBox cmb_localidad;
         private System.Windows.Forms.Button btn_agregar;
         private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.DataGridView dtg_mostrar_casas;
     }
 }
