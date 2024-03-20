@@ -14,7 +14,10 @@ namespace git_practica_2
         public frm_agregar()
         {
             InitializeComponent();
+            agregar = new Negocios.AgregarCasa();
         }
+
+        Negocios.AgregarCasa agregar;
         //=================
         //Metodos.
         private void fnKeyPressLetras(KeyPressEventArgs e)
@@ -40,7 +43,21 @@ namespace git_practica_2
                 e.Handled = false;
             }
         }
+
+        private void fnLocalidadCmb(ComboBox cmb)
+        {
+            DataTable dt = agregar.FnCargarCmb("select nombre, id_localidad from localidad");
+
+            DataRow fila = dt.NewRow();
+            fila[0] = "elija localidad";
+            fila[1] = 0;
+            dt.Rows.InsertAt(fila, 0);
+            cmb.DataSource = dt;
+            cmb.DisplayMember = "nombre";
+            cmb.ValueMember = "id_localidad";
+        }
         //==================
+
         private void txt_nombre_KeyPress(object sender, KeyPressEventArgs e)
         {
             fnKeyPressLetras(e);
@@ -63,7 +80,7 @@ namespace git_practica_2
 
         private void frm_agregar_Load(object sender, EventArgs e)
         {
-            int numeros = 20;
+            fnLocalidadCmb(cmb_localidad);
         }
     }
 }
