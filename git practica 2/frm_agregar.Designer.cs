@@ -37,6 +37,7 @@
             this.txt_numero = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.cmb_localidad = new System.Windows.Forms.ComboBox();
+            this.btn_agregar = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -76,7 +77,7 @@
             this.txt_color.Name = "txt_color";
             this.txt_color.Size = new System.Drawing.Size(121, 26);
             this.txt_color.TabIndex = 5;
-            this.txt_color.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_nombre_KeyPress);
+            this.txt_color.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_color_KeyPress);
             // 
             // txt_direccion
             // 
@@ -85,7 +86,7 @@
             this.txt_direccion.Name = "txt_direccion";
             this.txt_direccion.Size = new System.Drawing.Size(235, 26);
             this.txt_direccion.TabIndex = 7;
-            this.txt_direccion.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_apellido_KeyPress);
+            this.txt_direccion.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_direccion_KeyPress);
             // 
             // btn_cerrar
             // 
@@ -108,6 +109,7 @@
             this.txt_numero.Name = "txt_numero";
             this.txt_numero.Size = new System.Drawing.Size(92, 26);
             this.txt_numero.TabIndex = 11;
+            this.txt_numero.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_numero_KeyPress);
             // 
             // label4
             // 
@@ -128,11 +130,26 @@
             this.cmb_localidad.Size = new System.Drawing.Size(121, 21);
             this.cmb_localidad.TabIndex = 13;
             // 
+            // btn_agregar
+            // 
+            this.btn_agregar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btn_agregar.BackColor = System.Drawing.Color.ForestGreen;
+            this.btn_agregar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_agregar.ForeColor = System.Drawing.Color.White;
+            this.btn_agregar.Location = new System.Drawing.Point(433, 138);
+            this.btn_agregar.Name = "btn_agregar";
+            this.btn_agregar.Size = new System.Drawing.Size(110, 34);
+            this.btn_agregar.TabIndex = 14;
+            this.btn_agregar.Text = "Agregar";
+            this.btn_agregar.UseVisualStyleBackColor = false;
+            this.btn_agregar.Click += new System.EventHandler(this.btn_agregar_Click);
+            // 
             // frm_agregar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(910, 500);
+            this.Controls.Add(this.btn_agregar);
             this.Controls.Add(this.cmb_localidad);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.txt_numero);
@@ -162,5 +179,6 @@
         private System.Windows.Forms.TextBox txt_numero;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.ComboBox cmb_localidad;
+        private System.Windows.Forms.Button btn_agregar;
     }
 }

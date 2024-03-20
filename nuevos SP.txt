@@ -1,0 +1,19 @@
+create procedure SP_VISTA_CASA
+@estado nvarchar(20)
+as
+begin
+	select casa.color, casa.direccion, casa.num_direccion, casa.estado, localidad.nombre from casa inner join localidad
+	on casa.id_localidad = localidad.id_localidad where casa.estado = @estado
+end
+
+create procedure SP_VISTA_CASA_CLIENTE
+as
+begin
+	select casa.color, casa.direccion, casa.num_direccion, casa.estado, personas.nombre, personas.apellido, personas.DNI,
+	telefonos.num_tel from casa inner join compra
+	on casa.id_casa = compra.id_casa
+	inner join personas
+	on personas.codigo = compra.id_persona
+	inner join telefonos
+	on telefonos.id_persona = personas.codigo
+end
