@@ -30,12 +30,12 @@
         {
             this.pnl_menu_superior = new System.Windows.Forms.Panel();
             this.pnl_menu_lateral = new System.Windows.Forms.Panel();
+            this.btn_datos = new System.Windows.Forms.Button();
+            this.btn_vender = new System.Windows.Forms.Button();
             this.btn_modificar = new System.Windows.Forms.Button();
             this.btn_agregar = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.pnl_contenedor = new System.Windows.Forms.Panel();
-            this.btn_vender = new System.Windows.Forms.Button();
-            this.btn_datos = new System.Windows.Forms.Button();
             this.pnl_menu_lateral.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -61,6 +61,26 @@
             this.pnl_menu_lateral.Name = "pnl_menu_lateral";
             this.pnl_menu_lateral.Size = new System.Drawing.Size(155, 500);
             this.pnl_menu_lateral.TabIndex = 1;
+            // 
+            // btn_datos
+            // 
+            this.btn_datos.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btn_datos.Location = new System.Drawing.Point(0, 208);
+            this.btn_datos.Name = "btn_datos";
+            this.btn_datos.Size = new System.Drawing.Size(155, 49);
+            this.btn_datos.TabIndex = 3;
+            this.btn_datos.Text = "Datos";
+            this.btn_datos.UseVisualStyleBackColor = true;
+            // 
+            // btn_vender
+            // 
+            this.btn_vender.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btn_vender.Location = new System.Drawing.Point(0, 159);
+            this.btn_vender.Name = "btn_vender";
+            this.btn_vender.Size = new System.Drawing.Size(155, 49);
+            this.btn_vender.TabIndex = 2;
+            this.btn_vender.Text = "Vender";
+            this.btn_vender.UseVisualStyleBackColor = true;
             // 
             // btn_modificar
             // 
@@ -102,26 +122,6 @@
             this.pnl_contenedor.Size = new System.Drawing.Size(910, 500);
             this.pnl_contenedor.TabIndex = 2;
             // 
-            // btn_vender
-            // 
-            this.btn_vender.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btn_vender.Location = new System.Drawing.Point(0, 159);
-            this.btn_vender.Name = "btn_vender";
-            this.btn_vender.Size = new System.Drawing.Size(155, 49);
-            this.btn_vender.TabIndex = 2;
-            this.btn_vender.Text = "Vender";
-            this.btn_vender.UseVisualStyleBackColor = true;
-            // 
-            // btn_datos
-            // 
-            this.btn_datos.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btn_datos.Location = new System.Drawing.Point(0, 208);
-            this.btn_datos.Name = "btn_datos";
-            this.btn_datos.Size = new System.Drawing.Size(155, 49);
-            this.btn_datos.TabIndex = 3;
-            this.btn_datos.Text = "Datos";
-            this.btn_datos.UseVisualStyleBackColor = true;
-            // 
             // frm_venta_hogar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -131,6 +131,7 @@
             this.Controls.Add(this.pnl_menu_lateral);
             this.Controls.Add(this.pnl_menu_superior);
             this.Name = "frm_venta_hogar";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Venta Hogar";
             this.Load += new System.EventHandler(this.frm_venta_hogar_Load);
             this.pnl_menu_lateral.ResumeLayout(false);
