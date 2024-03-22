@@ -64,6 +64,12 @@
     <Compile Include="FrmModificarCasaMenu.Designer.cs">
       <DependentUpon>FrmModificarCasaMenu.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmVentas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmVentas.Designer.cs">
+      <DependentUpon>FrmVentas.cs</DependentUpon>
+    </Compile>
     <Compile Include="frm_agregar.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -80,6 +86,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmModificarCasaMenu.resx">
       <DependentUpon>FrmModificarCasaMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmVentas.resx">
+      <DependentUpon>FrmVentas.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frm_agregar.resx">
       <DependentUpon>frm_agregar.cs</DependentUpon>

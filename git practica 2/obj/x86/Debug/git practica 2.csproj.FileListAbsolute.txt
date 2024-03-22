@@ -39,6 +39,10 @@ C:\Programacion2\seminario de programacion\git practica 2a\git_practica_2a\git p
 C:\Programacion2\seminario de programacion\git practica 2a\git_practica_2a\git practica 2\obj\x86\Debug\git_practica_2.frm_venta_hogar.resources
 C:\Programacion2\seminario de programacion\git practica 2a\git_practica_2a\git practica 2\obj\x86\Debug\git_practica_2.FrmModificar.resources
 C:\Programacion2\seminario de programacion\git practica 2a\git_practica_2a\git practica 2\obj\x86\Debug\git_practica_2.FrmModificarCasaMenu.resources
+<<<<<<< HEAD
+C:\Programacion2\seminario de programacion\git practica 2a\git_practica_2a\git practica 2\obj\x86\Debug\git_practica_2.FrmVentas.resources
+=======
+>>>>>>> main
 C:\Programacion2\seminario de programacion\git practica 2a\git_practica_2a\git practica 2\obj\x86\Debug\git_practica_2.frm_agregar.resources
 C:\Programacion2\seminario de programacion\git practica 2a\git_practica_2a\git practica 2\obj\x86\Debug\git_practica_2.Properties.Resources.resources
 C:\Programacion2\seminario de programacion\git practica 2a\git_practica_2a\git practica 2\obj\x86\Debug\git practica 2.csproj.GenerateResource.Cache
