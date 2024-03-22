@@ -5,3 +5,10 @@ C:\Programacion2\seminario de programacion\git practica 2\Negocios\bin\Debug\Dat
 C:\Programacion2\seminario de programacion\git practica 2\Negocios\bin\Debug\Datos.pdb
 C:\Programacion2\seminario de programacion\git practica 2\Negocios\obj\Debug\Negocios.dll
 C:\Programacion2\seminario de programacion\git practica 2\Negocios\obj\Debug\Negocios.pdb
+C:\Programacion2\git practica 2a\git_practica_2a\Negocios\bin\Debug\Negocios.dll
+C:\Programacion2\git practica 2a\git_practica_2a\Negocios\bin\Debug\Negocios.pdb
+C:\Programacion2\git practica 2a\git_practica_2a\Negocios\bin\Debug\Datos.dll
+C:\Programacion2\git practica 2a\git_practica_2a\Negocios\bin\Debug\Datos.pdb
+C:\Programacion2\git practica 2a\git_practica_2a\Negocios\obj\Debug\Negocios.csprojResolveAssemblyReference.cache
+C:\Programacion2\git practica 2a\git_practica_2a\Negocios\obj\Debug\Negocios.dll
+C:\Programacion2\git practica 2a\git_practica_2a\Negocios\obj\Debug\Negocios.pdb

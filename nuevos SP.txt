@@ -17,3 +17,35 @@ begin
 	inner join telefonos
 	on telefonos.id_persona = personas.codigo
 end
+
+nevo para rama_pc
+create procedure SP_VISTA_CASA_TODAS
+as
+begin
+	select color, direccion, num_direccion, estado from casa
+end
+
+create procedure SP_UPDATE_CASA
+@color nvarchar(10),
+@direccion nvarchar(20),
+@num_direccion int,
+@id_localidad int,
+@id_casa int
+as
+begin
+	update casa set color = @color, direccion = @direccion,
+	num_direccion=@num_direccion, id_localidad = @id_localidad
+	where id_casa = @id_casa
+end
+
+
+
+create procedure SP_VISTA_CASA_CON_ID
+@estado nvarchar(10)
+as
+begin
+	select casa.color, casa.direccion, casa.num_direccion, casa.estado,
+	localidad.nombre, casa.id_casa from casa inner join localidad
+	on casa.id_localidad = localidad.id_localidad
+	where casa.estado = @estado
+end

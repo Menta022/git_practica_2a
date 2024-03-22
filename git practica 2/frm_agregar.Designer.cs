@@ -28,6 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -40,6 +42,9 @@
             this.btn_agregar = new System.Windows.Forms.Button();
             this.label5 = new System.Windows.Forms.Label();
             this.dtg_mostrar_casas = new System.Windows.Forms.DataGridView();
+            this.rd_en_venta = new System.Windows.Forms.RadioButton();
+            this.rd_vendido = new System.Windows.Forms.RadioButton();
+            this.rd_todas = new System.Windows.Forms.RadioButton();
             ((System.ComponentModel.ISupportInitialize)(this.dtg_mostrar_casas)).BeginInit();
             this.SuspendLayout();
             // 
@@ -162,19 +167,70 @@
             this.dtg_mostrar_casas.AllowUserToAddRows = false;
             this.dtg_mostrar_casas.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
             this.dtg_mostrar_casas.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dtg_mostrar_casas.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dtg_mostrar_casas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dtg_mostrar_casas.Location = new System.Drawing.Point(91, 229);
+            this.dtg_mostrar_casas.Location = new System.Drawing.Point(39, 223);
             this.dtg_mostrar_casas.Name = "dtg_mostrar_casas";
             this.dtg_mostrar_casas.ReadOnly = true;
             this.dtg_mostrar_casas.RowHeadersVisible = false;
-            this.dtg_mostrar_casas.Size = new System.Drawing.Size(426, 202);
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dtg_mostrar_casas.RowsDefaultCellStyle = dataGridViewCellStyle2;
+            this.dtg_mostrar_casas.Size = new System.Drawing.Size(504, 202);
             this.dtg_mostrar_casas.TabIndex = 16;
+            // 
+            // rd_en_venta
+            // 
+            this.rd_en_venta.AutoSize = true;
+            this.rd_en_venta.Checked = true;
+            this.rd_en_venta.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rd_en_venta.Location = new System.Drawing.Point(562, 223);
+            this.rd_en_venta.Name = "rd_en_venta";
+            this.rd_en_venta.Size = new System.Drawing.Size(90, 24);
+            this.rd_en_venta.TabIndex = 17;
+            this.rd_en_venta.TabStop = true;
+            this.rd_en_venta.Text = "En venta";
+            this.rd_en_venta.UseVisualStyleBackColor = true;
+            this.rd_en_venta.CheckedChanged += new System.EventHandler(this.rd_en_venta_CheckedChanged);
+            // 
+            // rd_vendido
+            // 
+            this.rd_vendido.AutoSize = true;
+            this.rd_vendido.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rd_vendido.Location = new System.Drawing.Point(562, 246);
+            this.rd_vendido.Name = "rd_vendido";
+            this.rd_vendido.Size = new System.Drawing.Size(86, 24);
+            this.rd_vendido.TabIndex = 19;
+            this.rd_vendido.Text = "Vendido";
+            this.rd_vendido.UseVisualStyleBackColor = true;
+            this.rd_vendido.CheckedChanged += new System.EventHandler(this.rd_vendido_CheckedChanged);
+            // 
+            // rd_todas
+            // 
+            this.rd_todas.AutoSize = true;
+            this.rd_todas.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rd_todas.Location = new System.Drawing.Point(562, 269);
+            this.rd_todas.Name = "rd_todas";
+            this.rd_todas.Size = new System.Drawing.Size(71, 24);
+            this.rd_todas.TabIndex = 21;
+            this.rd_todas.Text = "Todas";
+            this.rd_todas.UseVisualStyleBackColor = true;
+            this.rd_todas.CheckedChanged += new System.EventHandler(this.rd_todas_CheckedChanged);
             // 
             // frm_agregar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(910, 500);
+            this.Controls.Add(this.rd_todas);
+            this.Controls.Add(this.rd_vendido);
+            this.Controls.Add(this.rd_en_venta);
             this.Controls.Add(this.dtg_mostrar_casas);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.btn_agregar);
@@ -211,5 +267,8 @@
         private System.Windows.Forms.Button btn_agregar;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.DataGridView dtg_mostrar_casas;
+        private System.Windows.Forms.RadioButton rd_en_venta;
+        private System.Windows.Forms.RadioButton rd_vendido;
+        private System.Windows.Forms.RadioButton rd_todas;
     }
 }
