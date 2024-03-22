@@ -26,3 +26,4 @@ C:\Programacion2\git practica 2a\git_practica_2a\git practica 2\bin\Debug\Negoci
 C:\Programacion2\git practica 2a\git_practica_2a\git practica 2\bin\Debug\Datos.pdb
 C:\Programacion2\git practica 2a\git_practica_2a\git practica 2\obj\x86\Debug\git practica 2.csprojResolveAssemblyReference.cache
 C:\Programacion2\git practica 2a\git_practica_2a\git practica 2\obj\x86\Debug\git_practica_2.FrmModificar.resources
+C:\Programacion2\git practica 2a\git_practica_2a\git practica 2\obj\x86\Debug\git_practica_2.FrmModificarCasaMenu.resources

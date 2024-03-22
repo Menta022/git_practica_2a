@@ -20,6 +20,7 @@ namespace git_practica_2
             txt_numero.MaxLength = 5;
         }
 
+        private string estado = "en venta";
         Negocios.AgregarCasa agregar;
         //=================
         //Metodos.
@@ -80,6 +81,19 @@ namespace git_practica_2
             return seguir;
         }
 
+        private void fnCargarGrilla(int num)
+        {
+            switch (num)
+            {
+                case 1: // mostrar vista de casa en estado en venta o vendido.
+                    agregar.VarEstado = estado;
+                    dtg_mostrar_casas.DataSource = agregar.FnVistaSP("SP_VISTA_CASA", agregar.para(2));
+                    break;
+                case 2:
+                    dtg_mostrar_casas.DataSource = agregar.FnVistaSP("SP_VISTA_CASA_TODAS");
+                    break;
+            }
+        }
 
         //==================
 
@@ -106,6 +120,7 @@ namespace git_practica_2
         private void frm_agregar_Load(object sender, EventArgs e)
         {
             fnLocalidadCmb(cmb_localidad);
+            fnCargarGrilla(1);
         }
 
         private void btn_agregar_Click(object sender, EventArgs e)
@@ -147,6 +162,32 @@ namespace git_practica_2
         private void txt_numero_KeyPress(object sender, KeyPressEventArgs e)
         {
             fnKeyPressNumeros(e);
+        }
+
+        private void rd_en_venta_CheckedChanged(object sender, EventArgs e)
+        {
+            if (rd_en_venta.Checked)
+            {
+                estado = "en venta";
+                fnCargarGrilla(1);
+            }
+        }
+
+        private void rd_vendido_CheckedChanged(object sender, EventArgs e)
+        {
+            if (rd_vendido.Checked)
+            {
+                estado = "vendido";
+                fnCargarGrilla(1);
+            }
+        }
+
+        private void rd_todas_CheckedChanged(object sender, EventArgs e)
+        {
+            if (rd_todas.Checked)
+            {
+                fnCargarGrilla(2);
+            }
         }
     }
 }
