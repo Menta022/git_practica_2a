@@ -54,5 +54,10 @@ namespace git_practica_2
             fnAbrirForms(new FrmModificar());
         }
 
+        private void btn_vender_Click(object sender, EventArgs e)
+        {
+            fnAbrirForms(new FrmVentas());
+        }
+
     }
 }
