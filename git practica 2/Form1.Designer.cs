@@ -81,6 +81,7 @@
             this.btn_vender.TabIndex = 2;
             this.btn_vender.Text = "Vender";
             this.btn_vender.UseVisualStyleBackColor = true;
+            this.btn_vender.Click += new System.EventHandler(this.btn_vender_Click);
             // 
             // btn_modificar
             // 

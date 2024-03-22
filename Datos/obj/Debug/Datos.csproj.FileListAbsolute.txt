@@ -8,3 +8,8 @@ C:\Programacion2\git practica 2a\git_practica_2a\Datos\bin\Debug\Datos.pdb
 C:\Programacion2\git practica 2a\git_practica_2a\Datos\obj\Debug\Datos.csprojResolveAssemblyReference.cache
 C:\Programacion2\git practica 2a\git_practica_2a\Datos\obj\Debug\Datos.dll
 C:\Programacion2\git practica 2a\git_practica_2a\Datos\obj\Debug\Datos.pdb
+C:\Programacion2\seminario de programacion\git practica 2a\git_practica_2a\Datos\bin\Debug\Datos.dll
+C:\Programacion2\seminario de programacion\git practica 2a\git_practica_2a\Datos\bin\Debug\Datos.pdb
+C:\Programacion2\seminario de programacion\git practica 2a\git_practica_2a\Datos\obj\Debug\Datos.csprojResolveAssemblyReference.cache
+C:\Programacion2\seminario de programacion\git practica 2a\git_practica_2a\Datos\obj\Debug\Datos.dll
+C:\Programacion2\seminario de programacion\git practica 2a\git_practica_2a\Datos\obj\Debug\Datos.pdb
